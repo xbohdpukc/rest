@@ -11,4 +11,5 @@ import org.springframework.ws.config.annotation.EnableWs;
 @PropertySource("classpath:application.properties")
 public class AppConfig {
 
+
 }
