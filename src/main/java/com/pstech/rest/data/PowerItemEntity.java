@@ -16,11 +16,11 @@ import java.time.LocalDateTime;
 public class PowerItemEntity {
 
     @Id
-    @GeneratedValue(strategy = GenerationType.AUTO)
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     Long id;
 
-    @Column
-    LocalDateTime timestamp;
+    @Column()
+    LocalDateTime timestamp = LocalDateTime.now();
 
     @Column
     double pc1_energy;

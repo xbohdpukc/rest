@@ -2,6 +2,8 @@ package com.pstech.rest;
 
 import com.pstech.rest.data.PowerItemEntity;
 import com.pstech.rest.data.PowerItemEntityRepository;
+import com.pstech.rest.data.PowerReportEntity;
+import com.pstech.rest.data.PowerReportEntityRepository;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -17,6 +19,9 @@ public class RestApplicationTests {
 
     @Autowired
     PowerItemEntityRepository repository;
+
+    @Autowired
+    PowerReportEntityRepository repoReport;
 
     @Test
     public void contextLoads() {
@@ -42,8 +47,7 @@ public class RestApplicationTests {
 
     @Test
     public void anotherDataTest() {
-        List<PowerItemEntity> items = repository.findAll();
-
+        List<PowerReportEntity> report = repoReport.generateReport(PowerReportEntity.DAILY_REPORT);
     }
 
 }
