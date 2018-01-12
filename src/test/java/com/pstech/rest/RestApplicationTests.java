@@ -10,7 +10,6 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.test.context.junit4.SpringRunner;
 
-import java.time.LocalDateTime;
 import java.util.List;
 
 @RunWith(SpringRunner.class)
@@ -29,6 +28,7 @@ public class RestApplicationTests {
 
     @Test
     public void dataTest() {
+        /*
         PowerItemEntity item = new PowerItemEntity();
         item.setTimestamp(LocalDateTime.now());
         item.setPc1_energy(0);
@@ -40,7 +40,7 @@ public class RestApplicationTests {
         item.setPc3_power(6);
         item.setPo_power(7);
         repository.save(item);
-
+*/
         List<PowerItemEntity> items = repository.findAll();
 
     }
