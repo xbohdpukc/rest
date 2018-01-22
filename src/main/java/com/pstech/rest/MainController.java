@@ -1,7 +1,7 @@
 package com.pstech.rest;
 
-import com.pstech.rest.data.PowerItemEntity;
-import com.pstech.rest.data.PowerItemEntityRepository;
+import com.pstech.rest.data.power.PowerItemEntity;
+import com.pstech.rest.data.power.PowerItemEntityRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.transaction.annotation.Transactional;
 import org.springframework.web.bind.annotation.GetMapping;

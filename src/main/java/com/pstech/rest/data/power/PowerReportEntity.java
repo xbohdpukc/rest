@@ -1,4 +1,4 @@
-package com.pstech.rest.data;
+package com.pstech.rest.data.power;
 
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import lombok.Data;
